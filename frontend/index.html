@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Management App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>📝 User Management</h1>
+
+      <!-- ฟอร์มเพิ่มผู้ใช้ -->
+      <div class="form-section">
+        <h2>เพิ่มผู้ใช้ใหม่</h2>
+        <form id="userForm">
+          <input type="text" id="name" placeholder="ชื่อ" required />
+          <input type="email" id="email" placeholder="อีเมล" required />
+          <button type="submit">➕ เพิ่มผู้ใช้</button>
+        </form>
+      </div>
+
+      <!-- แสดงรายการผู้ใช้ -->
+      <div class="users-section">
+        <h2>รายการผู้ใช้</h2>
+        <div id="usersList">
+          <p class="loading">กำลังโหลด...</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
